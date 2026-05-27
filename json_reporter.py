@@ -10,7 +10,7 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from core.runner import AttemptRecord, PayloadTestResult, RunSummary
+from runner import AttemptRecord, PayloadTestResult, RunSummary
 
 
 def _serialize_attempt(a: AttemptRecord) -> dict:

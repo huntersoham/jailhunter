@@ -10,7 +10,7 @@ from typing import Optional
 
 import aiohttp
 
-from .base_provider import BaseProvider, ModelResponse
+from base_provider import BaseProvider, ModelResponse
 
 logger = logging.getLogger("jailhunter.providers.ollama")
 
@@ -23,7 +23,7 @@ class OllamaProvider(BaseProvider):
         base_url: str = "http://localhost:11434",
         timeout: int = 120,
     ) -> None:
-        self.base_url = base_url.rstrip("/")
+        self.base_url = base_url if base_url else "http://localhost:11434"
         self.timeout = aiohttp.ClientTimeout(total=timeout)
 
     def is_available(self) -> bool:

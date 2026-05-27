@@ -1,9 +1,23 @@
+# JailHunter dependencies
+# Install: pip install -r requirements.txt
+
+# Async HTTP client
 aiohttp>=3.9.0
-asyncio-throttle>=1.0.2
+
+# CLI framework
 typer[all]>=0.12.0
+
+# Terminal UI
 rich>=13.7.0
-openai>=1.30.0
+
+# Data validation
 pydantic>=2.7.0
 
-# Optional: local model support
+# .env file support
+python-dotenv>=1.0.0
+
+# Optional: OpenAI SDK (for OpenAI provider)
+# openai>=1.30.0
+
+# Optional: local model testing via Ollama Python client
 # ollama>=0.2.0

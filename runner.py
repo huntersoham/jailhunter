@@ -13,10 +13,10 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
 
-from analyzers.response_analyzer import AnalysisResult, ResponseAnalyzer
-from mutators.adaptive_mutator import AdaptiveMutator, MutationResult, MutationStrategy
-from payloads.payload_library import Payload, PayloadCategory, get_all_payloads
-from providers.base_provider import BaseProvider, ModelResponse
+from response_analyzer import AnalysisResult, ResponseAnalyzer
+from adaptive_mutator import AdaptiveMutator, MutationResult, MutationStrategy
+from payload_library import  Payload, PayloadCategory, get_all_payloads
+from base_provider import BaseProvider, ModelResponse
 
 logger = logging.getLogger("jailhunter.core.runner")
 

@@ -9,8 +9,8 @@ import random
 from dataclasses import dataclass
 from enum import Enum
 
-from analyzers.response_analyzer import AnalysisResult, DetectionType
-from payloads.payload_library import Payload, PayloadCategory
+from response_analyzer import AnalysisResult, DetectionType
+from payload_library import Payload, PayloadCategory
 
 
 class MutationStrategy(str, Enum):

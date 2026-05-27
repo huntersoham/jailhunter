@@ -10,7 +10,7 @@ from typing import Optional
 
 import aiohttp
 
-from .base_provider import BaseProvider, ModelResponse
+from base_provider import BaseProvider, ModelResponse
 
 logger = logging.getLogger("jailhunter.providers.openai")
 
