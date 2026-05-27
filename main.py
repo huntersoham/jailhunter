@@ -33,7 +33,7 @@ from payloads.payload_library import PayloadCategory, get_all_payloads, get_payl
 from providers import get_provider
 from providers.ollama_provider import OllamaProvider
 from reports.json_reporter import generate_markdown_report, generate_report
-from utils import (
+from utils.terminal_ui import (
     console,
     log_attempt,
     log_debug,

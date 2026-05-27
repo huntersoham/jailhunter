@@ -345,3 +345,7 @@ def print_summary(summary: object) -> None:
 
     console.print(breakdown)
     console.print()
+
+def setup_logging(*args, **kwargs):
+    return None
+
